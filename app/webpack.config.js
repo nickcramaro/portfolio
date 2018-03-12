@@ -4,6 +4,7 @@ const HtmlWebPackPlugin = require('html-webpack-plugin');
 module.exports = {
   mode: 'development',
   entry: ['./src/index.js'],
+  watch: true,
   output: {
     path: path.resolve(__dirname, '../public'),
     filename: 'js/[name].js'
@@ -21,8 +22,14 @@ module.exports = {
         loader: 'html-loader'
       }
     }, {
-      test: /\.css$/,
-      use: ['style-loader', 'css-loader']
+      test: /\.scss$/,
+      use: [{
+        loader: 'style-loader'
+      }, {
+        loader: 'css-loader'
+      }, {
+        loader: 'sass-loader'
+      }]
     }, {
       test: /\.(png|woff|woff2|eot|ttf|svg|jpg)$/,
       use: {
@@ -35,8 +42,9 @@ module.exports = {
   },
   resolve: {
     alias: {
-      Page: path.resolve(__dirname, 'src/js/components/page'),
-      Shared: path.resolve(__dirname, 'src/js/components/shared')
+      Page: path.resolve(__dirname, 'src/js/page'),
+      Shared: path.resolve(__dirname, 'src/js/shared'),
+      Sass: path.resolve(__dirname, 'src/sass')
     }
   },
   plugins: [
