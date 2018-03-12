@@ -1,3 +1,3 @@
 # portfolio
 
-A quick description of portfolio.
+WIP portfolio using React and Strapi.
