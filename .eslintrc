@@ -16,7 +16,8 @@
     },
     "globals": {
         "strapi": true,
-        "document": true
+        "document": true,
+        "window": true
     },
     "plugins": [
         "react"

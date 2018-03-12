@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 $blue: #45A4D9;
-$white: #ffffff;
+$white: #fefefe;
+$black: #272727;
 body {
   font-family: 'Roboto', sans-serif;
   margin: 0;
@@ -8,17 +9,25 @@ body {
 
 .navigation {
   display: flex;
-  position: static;
+  position: fixed;
   align-items: center;
   height: 64px;
-  background-color: $blue;
+  width: 100%;
+  background-color: $white;
   padding: 0px 20px;
+  box-sizing: border-box;
+  opacity: 0;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
   &__logo {
-    color: $white;
+    font-weight: normal;
+    color: $black;
     margin: 0 auto 0 0;
   }
   &__link {
-    color: $white;
+    color: $black;
     padding: 0 0 0 5px;
     text-decoration: none;
   }
@@ -28,6 +37,46 @@ body {
   display: flex;
   padding: 20px;
   &__heading1 {
+    font-weight: normal;
+  }
+}
 
+.terminal {
+  font-family: monospace;
+  background-color: $black;
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  font-size: 200%;
+  &__text {
+    color: $white;
+    margin: 0 auto;
+    &--input {
+      overflow: hidden;
+      border-right: .15em solid $white;
+      white-space: nowrap;
+      margin: 0 auto;
+      letter-spacing: .15em;
+      animation: typing 2s steps(40, end), blink-caret .75s step-end infinite;
+    }
+  }
+}
+
+@keyframes typing {
+  from {
+    width: 0
+  }
+  to {
+    width: 100%
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent
+  }
+  50% {
+    border-color: $white;
   }
 }
