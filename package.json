@@ -24,15 +24,11 @@
     "strapi-mongoose": "3.0.0-alpha.11.1"
   },
   "author": {
-    "name": "nickcramaro",
-    "email": "",
-    "url": ""
+    "name": "nickcramaro"
   },
   "maintainers": [
     {
-      "name": "nickcramaro",
-      "email": "",
-      "url": ""
+      "name": "nickcramaro"
     }
   ],
   "strapi": {
