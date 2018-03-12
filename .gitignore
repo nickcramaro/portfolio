@@ -1,5 +1,6 @@
 build
-public
+public/index.html
+public/js
 
 ############################
 # OS X
