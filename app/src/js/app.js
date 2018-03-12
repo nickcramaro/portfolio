@@ -9,8 +9,11 @@ class App extends Component {
   render() {
     return (
       <div>
-        <Link to='/'>Home</Link>
-        <Link to='/blog'>Blog</Link>
+        <nav className='navigation'>
+          <h1 className='navigation__logo'>Nick Cramaro</h1>
+          <Link className='navigation__link' to='/'>Home</Link>
+          <Link className='navigation__link' to='/blog'>Blog</Link>
+        </nav>
         <Switch>
           <Route path='/' exact component={Home} />
           <Route path='/blog' component={Blog} />

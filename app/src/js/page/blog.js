@@ -3,8 +3,8 @@ class Blog extends Component {
 
   render() {
     return (
-      <div>
-        <h1 className='title'>Blog</h1>
+      <div className='container'>
+        <h1 className='container__heading1'>Blog</h1>
       </div>
     );
   }
