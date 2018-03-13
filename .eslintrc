@@ -26,6 +26,8 @@
         "indent": ["error", 2, {
             "SwitchCase": 1
         }],
+        "no-undef": "off",
+        "no-unused-vars": "off",
         "linebreak-style": ["error", "unix"],
         "no-console": 0,
         "quotes": ["error", "single"],

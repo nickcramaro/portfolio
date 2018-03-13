@@ -9,19 +9,40 @@
     "start": "node server.js",
     "strapi": "node_modules/strapi/bin/strapi.js",
     "lint": "node_modules/.bin/eslint api/**/*.js config/**/*.js plugins/**/*.js",
-    "postinstall": "node node_modules/strapi/lib/utils/post-install.js"
+    "postinstall": "node node_modules/strapi/lib/utils/post-install.js",
+    "dev": "webpack"
   },
   "devDependencies": {
     "babel-eslint": "^7.1.1",
     "eslint": "^3.12.2",
     "eslint-config-airbnb": "^13.0.0",
     "eslint-plugin-import": "^2.2.0",
-    "eslint-plugin-react": "^6.8.0"
+    "eslint-plugin-react": "^6.8.0",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "css-loader": "^0.28.10",
+    "html-loader": "^0.5.5",
+    "html-webpack-plugin": "^3.0.6",
+    "node-sass": "^4.7.2",
+    "prop-types": "^15.6.0",
+    "sass-loader": "^6.0.7",
+    "style-loader": "^0.20.2",
+    "url-loader": "^1.0.1",
+    "webpack": "^4.1.1",
+    "webpack-cli": "^2.0.10",
+    "webpack-dev-server": "3.1.0"
   },
   "dependencies": {
     "lodash": "4.x.x",
     "strapi": "3.0.0-alpha.11.1",
-    "strapi-mongoose": "3.0.0-alpha.11.1"
+    "strapi-mongoose": "3.0.0-alpha.11.1",
+    "axios": "^0.18.0",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-router-dom": "^4.2.2"
   },
   "author": {
     "name": "nickcramaro"

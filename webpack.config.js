@@ -3,10 +3,10 @@ const HtmlWebPackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   mode: 'development',
-  entry: ['./src/index.js'],
+  entry: ['./app/index.js'],
   watch: true,
   output: {
-    path: path.resolve(__dirname, '../public'),
+    path: path.resolve(__dirname, './public'),
     filename: 'js/[name].js'
   },
   module: {
@@ -42,14 +42,14 @@ module.exports = {
   },
   resolve: {
     alias: {
-      Page: path.resolve(__dirname, 'src/js/page'),
-      Shared: path.resolve(__dirname, 'src/js/shared'),
-      Sass: path.resolve(__dirname, 'src/sass')
+      Page: path.resolve(__dirname, 'app/js/page'),
+      Shared: path.resolve(__dirname, 'app/js/shared'),
+      Sass: path.resolve(__dirname, 'app/sass')
     }
   },
   plugins: [
     new HtmlWebPackPlugin({
-      template: './src/index.html',
+      template: './app/index.html',
       filename: './index.html'
     })
   ]
