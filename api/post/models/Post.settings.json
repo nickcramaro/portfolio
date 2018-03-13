@@ -1,9 +1,9 @@
 {
   "connection": "default",
-  "collectionName": "",
+  "collectionName": "post",
   "info": {
     "name": "post",
-    "description": ""
+    "description": "Blog post type"
   },
   "options": {
     "timestamps": true

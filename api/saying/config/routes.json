@@ -1,0 +1,44 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/saying",
+      "handler": "Saying.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/saying/:_id",
+      "handler": "Saying.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/saying",
+      "handler": "Saying.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/saying/:_id",
+      "handler": "Saying.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/saying/:_id",
+      "handler": "Saying.destroy",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

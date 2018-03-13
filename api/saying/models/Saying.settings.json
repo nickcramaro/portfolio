@@ -1,0 +1,17 @@
+{
+  "connection": "default",
+  "collectionName": "",
+  "info": {
+    "name": "saying",
+    "description": "Saying for use on the homepage"
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "text": {
+      "type": "text",
+      "multiple": false
+    }
+  }
+}
